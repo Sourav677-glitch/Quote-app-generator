@@ -35,7 +35,7 @@ function generateQuotes() {
     quote.innerHTML='Loading New Quotes.....<i class="fa-solid fa-sync fa-spin"></i>';
     generate.innerHTML='Generating...';
     fetch("https://api.api-ninjas.com/v1/quotes?category=", {
-        headers: { "X-Api-Key": "ZLC++ah0h+7VxOfDQkAepw==NepFSXABoOH9gxFA" }
+        // headers: { "X-Api-Key": "ZLC++ah0h+7VxOfDQkAepw==NepFSXABoOH9gxFA" }
     })
     .then((response) => response.json())
     .then((data) => {
