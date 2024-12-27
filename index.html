@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator ---By Sourav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+ <div class="container quoteArea">
+    
+    <div>
+    <div class="mood mood-top-left">
+        <span id="category">Category</span>
+    </div>
+    <div id="datetime"></div>
+    <h2>Quote of the Day</h2>
+    <div class="quote"></div>
+    <div class="buttons">
+        <div class="icons">
+            <i class="fa-regular fa-heart"id="likequote" onclick="likeQuote()"></i>
+            <i class="fa-solid fa-list" id="likelist"></i>
+            <i class="fa-regular fa-copy" id="copy" onclick="copyQuote()"></i>
+            <i class="fa-brands fa-x-twitter" id="X" onclick="twiiterQuote()"></i>
+            <i class="fa-brands fa-whatsapp" id="whatsapp" onclick="whatsappQuote()"></i>    
+        </div>
+        <button id="generate" onclick="generateQuotes()">New Quote</button>    
+       </div>
+</div>
+ </div>
+
+ <div class="container favouriteList">
+    <h2>Favourite Quote Lists</h2>
+    <i class="fa-solid fa-arrow-left-long" onclick=switchQuotes()></i>
+    <ul id="favouriteDAta"></ul>
+    <i class="fa-solid fa-broom" onclick="clearFavouriteList()"></i>
+ </div>
+</body>
+<script src="script.js"></script>
+</html>
