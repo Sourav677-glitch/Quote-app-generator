@@ -35,7 +35,7 @@ function generateQuotes() {
     quote.innerHTML='Loading New Quotes.....<i class="fa-solid fa-sync fa-spin"></i>';
     generate.innerHTML='Generating...';
     fetch("https://api.api-ninjas.com/v1/quotes?category=", {
-        // headers: { "X-Api-Key": "ZLC++ah0h+7VxOfDQkAepw==NepFSXABoOH9gxFA" }
+        headers: { "X-Api-Key": "ZLC++ah0h+7VxOfDQkAepw==NepFSXABoOH9gxFA" }
     })
     .then((response) => response.json())
     .then((data) => {
@@ -86,9 +86,9 @@ function twiiterQuote(){
     window.open(twiteurl, '_blank');
 }
 function whatsappQuote() {
-    const quoteText = document.querySelector('.quote').innerText; // Get the quote text
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(quoteText)}`; // Create WhatsApp URL
-    window.open(whatsappUrl, '_blank'); // Open in a new tab
+    const quoteText = document.querySelector('.quote').innerText;
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(quoteText)}`;
+    window.open(whatsappUrl, '_blank');
 }
 
 likelist.addEventListener("click",()=>{
